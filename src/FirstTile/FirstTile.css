@@ -1,0 +1,12 @@
+.heading-one,.para-one{
+    margin: 15px 0;
+    font-family: 'Recursive', sans-serif;
+    color: white;
+}
+.rock-image{
+   width: 100%;
+   height: 500px;
+}
+.container-fluid{
+    padding: 0;
+}
