@@ -1,5 +1,6 @@
 import React from "react";
 import "./NavBar.css";
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   return (
@@ -32,9 +33,9 @@ const NavBar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
+              <Link to='../../AdidasPage/Adidas.jsx' className="nav-link active" aria-current="page" href="#">
                 Adidas
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="#">

@@ -8,9 +8,8 @@ const FirstTile = () => {
                 Shoes and Sneakers
             </h1>
             <p className="para-one">Of the finest quality.</p>
-            <img className="rock-image" src="https://brobible.files.wordpress.com/2018/03/project-rock-under-armour-collection-new1.jpg" />
         </div>
     )
 }
 
-export default FirstTile
+export default FirstTile   
