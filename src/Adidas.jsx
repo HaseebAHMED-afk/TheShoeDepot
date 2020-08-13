@@ -1,9 +1,10 @@
 import React from 'react'
+import NavBar from './Components/NavBar/NavBar'
 
 const Adidas = () => {
     return (
         <div>
-            Hello
+            <NavBar />
         </div>
     )
 }

@@ -6,9 +6,9 @@ const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-danger">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+        <Link to="/" className="navbar-brand">
           TheShoeDepot™
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -23,29 +23,24 @@ const NavBar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
-                Home
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
+              <Link to="/nike" className="nav-link active" aria-current="page" >
                 Nike
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <Link to='../../AdidasPage/Adidas.jsx' className="nav-link active" aria-current="page" href="#">
+              <Link to='/adidas' className="nav-link active" aria-current="page" >
                 Adidas
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
+              <Link to="/reebok" className="nav-link active" aria-current="page" >
                 Reebok
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
+              <Link to="/underarmour" className="nav-link active" aria-current="page">
                 UnderArmour
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
