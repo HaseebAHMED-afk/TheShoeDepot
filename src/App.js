@@ -21,13 +21,14 @@ function App() {
     fecthItems()
   }, [])
 
+
   return (<div>
 
     <Routes>
       <Route path="/" element={<Home data={data} />} />
-      <Route path="/underarmour" element={<UnderArmour />} />
+      <Route path="/underarmour" element={<UnderArmour  />} />
       <Route path="/adidas" element={<Adidas/>} />
-      <Route path="/nike" element={<Nike />} />
+      <Route path="/nike" element={<Nike data={data} />} />
       <Route path="/reebok" element={<Reebok  />} />
     </Routes>
 

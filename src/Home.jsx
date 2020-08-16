@@ -3,6 +3,7 @@ import "./App.css";
 import NavBar from "./Components/NavBar/NavBar";
 import FirstTile from "./Components/FirstTile/FirstTile";
 import Carousel from "./Components/Carousel/Carousel";
+import Footer from "./Components/Footer/Footer";
 
 function App({ data: { nike, adidas, reebok, underarmour } }) {
   const nikeItem1 = nike ? nike[0] : null;
@@ -28,21 +29,31 @@ function App({ data: { nike, adidas, reebok, underarmour } }) {
       <NavBar />
       <FirstTile />
       <Carousel />
+      <div className="new-arrival-heading">
+      <h1 >New Arrivals</h1>
+      <p>Check out the hottest new arrivals</p>
+      </div>
+      <div className="row row-cols-1 row-cols-md-2 cardDeck">
       {data.map((item, i) => {
         const img = item ? item.img1 : null;
         const heading = item ? item.name : null;
         const desc = item ? item.detail : null;
         return (
-            <div className="card " style={{ width: "18rem" }}>
-              <img src={img} className="card-img-top" />
-              <div className="card-body">
-                <h5 className="card-title">{heading}</h5>
-                <p className="card-text">{desc}</p>
-              </div>
-            </div>
+          <div className="col mb-4">
+                  <div className="card card-detail" key={i}  >
+                    <img src={img} alt={heading} className="card-img-top" />
+                    <div className="card-body">
+                      <h5 className="card-title">{heading}</h5>
+                      <p className="card-text">{desc}</p>
+                      <button className="btn btn-outline-dark btn-md">View</button>
+                    </div>
+                  </div>
+                  </div>
         );
       })}
-    </div>
+      </div>
+      <Footer />
+      </div>
   );
 }
 

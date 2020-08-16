@@ -6,3 +6,22 @@ body{
     background-color: black;
     margin: 0;
 }
+.new-arrival-heading{
+    margin: 5rem 0;
+    color: white;
+    font-family: 'Recursive', sans-serif;
+}
+.mb-4{
+    width: 560px;
+}
+.card-img-top{
+    height: 667px !important;
+}
+.cardDeck{
+    padding: 25px 10px;
+    justify-content: center;
+}
+.btn{
+    margin: 10px;
+    width: 25%;
+}
