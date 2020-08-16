@@ -35,4 +35,4 @@ jobs:
       run: npm install surge
       
     - name: Deploy to Surge
-      run: surge ./build theshoedepot.surge.sh --token ${{secrets.SURGE_SECRET}}
+      run: surge ./build theshoedepotbyhaseebahmed.surge.sh --token ${{secrets.SURGE_SECRET}}
