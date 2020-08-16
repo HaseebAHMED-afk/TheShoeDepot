@@ -1,10 +1,11 @@
 import React from "react";
 import "./App.css";
-import NavBar from "./Components/NavBar/NavBar";
 import FirstTile from "./Components/FirstTile/FirstTile";
 import Carousel from "./Components/Carousel/Carousel";
 import Footer from "./Components/Footer/Footer";
 import data from "./Data/shoes.json";
+import Fade from 'react-reveal/Fade';
+
 
 function App() {
   const { nike, adidas, reebok, underarmour } = data;
@@ -25,7 +26,6 @@ function App() {
 
   return (
     <div>
-      <NavBar />
       <FirstTile />
       <Carousel />
       <div className="new-arrival-heading">
@@ -35,6 +35,7 @@ function App() {
       <div className="row row-cols-1 row-cols-md-2 cardDeck">
         {shoes.map((item, i) => {
           return <div className="col mb-4">
+          <Fade bottom>
             <div className="card card-detail" key={i}>
               <img src={item.img1} alt={item.name} className="card-img-top" />
               <div className="card-body">
@@ -43,6 +44,7 @@ function App() {
                 <button className="btn btn-outline-dark btn-md">View</button>
               </div>
             </div>
+            </Fade>
           </div>;
         })}
       </div>

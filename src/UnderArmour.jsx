@@ -1,9 +1,8 @@
 import React from 'react'
-import NavBar from './Components/NavBar/NavBar'
 import data from './Data/shoes.json';
 import Footer from './Components/Footer/Footer'
-import { Outlet } from 'react-router';
-import {Link} from 'react-router-dom';
+import Fade from 'react-reveal/Fade';
+
 
 const UnderArmour = (ua) => {
 
@@ -11,15 +10,15 @@ const UnderArmour = (ua) => {
 
     return (
         <div>
-            <NavBar />
             <div >
-      <img className="logo" src="./src-images/underarmour.png" />
+      <img className="logo" src="./src-images/underarmour.png" alt="underarmour-logo" />
         <h3 className="top-heading">UnderArmour℗</h3>
         <h3 className="top-heading">Protect The House.</h3>
         <div className="row row-cols-1 row-cols-md-2 cardDeck">
           {underarmour.map((item, key) => {
             return (
               <div className="col mb-4">
+              <Fade bottom>
                 <div className="card card-detail" key={key}>
                   <img
                     src={item.img1}
@@ -34,12 +33,12 @@ const UnderArmour = (ua) => {
                     </button>
                   </div>
                 </div>
+                </Fade>
               </div>
             );
           })}
         </div>
       </div>
-      <Outlet />
       <Footer />
         </div>
     )

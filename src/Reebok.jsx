@@ -1,7 +1,8 @@
 import React from 'react'
-import NavBar from './Components/NavBar/NavBar'
 import data from './Data/shoes.json';
 import Footer from './Components/Footer/Footer';
+import Fade from 'react-reveal/Fade';
+
 
 const Reebok = () => {
 
@@ -9,9 +10,8 @@ const Reebok = () => {
 
     return (
         <div>
-            <NavBar />
             <div className="top-heading">
-                <img src="./src-images/reebok.png" className="logo" />
+                <img src="./src-images/reebok.png" className="logo" alt="reebok-logo" />
                 <h3>Sport The Unexpected</h3>
             </div>
             <div className="row row-cols-1 row-cols-md-2 cardDeck">
@@ -19,6 +19,7 @@ const Reebok = () => {
                 reebok.map((item,key) => {
                     return(
                         <div className="col mb-4">
+                        <Fade bottom >
                 <div className="card card-detail" key={key}>
                   <img
                     src={item.img1}
@@ -33,6 +34,7 @@ const Reebok = () => {
                     </button>
                   </div>
                 </div>
+                </Fade>
               </div>
                     )
                 })

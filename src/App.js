@@ -6,22 +6,18 @@ import UnderArmour from './UnderArmour';
 import Nike from './Nike';
 import Home from './Home';
 import Reebok from './Reebok';
-import ViewShoe from './ViewShoes'
+import NavBar from './Components/NavBar/NavBar';
 
 function App() {
 
   return (<div>
-
+  <NavBar />
     <Routes>
-      <Route path="/" element={<Home />}></Route>
-      <Route path="/nike" element={<Nike />}>
-      </Route>
-      <Route path="/adidas" element={<Adidas />}>
-      </Route>
-      <Route path="/reebok" element={<Reebok />}>
-      </Route>
-      <Route path="/underarmour" element={<UnderArmour />}>
-      </Route>
+      <Route path="/" element={<Home />}/>
+      <Route path="/nike" element={<Nike />}/>
+      <Route path="/adidas" element={<Adidas />}/>
+      <Route path="/reebok" element={<Reebok />}/>
+      <Route path="/underarmour" element={<UnderArmour />}/>
     </Routes>
 
     </div>

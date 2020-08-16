@@ -1,26 +1,23 @@
 import React from "react";
-import NavBar from "./Components/NavBar/NavBar";
 import "./App.css";
 import data from "./Data/shoes.json";
 import Footer from "./Components/Footer/Footer";
-import { Outlet } from "react-router";
-import {Link} from 'react-router-dom';
+import Fade from 'react-reveal/Fade';
 
 const Nike = () => {
   const { nike } = data;
 
   return (
     <div>
-    <Outlet />
-      <NavBar />
       <div >
-      <img className="logo" src="./src-images/nike.png" />
+      <img className="logo" src="./src-images/nike.png" alt="nike-logo" />
         <h3 className="top-heading">Just Do It.</h3>
         <h3 className="top-heading">But with the best.</h3>
         <div className="row row-cols-1 row-cols-md-2 cardDeck">
           {nike.map((item, key) => {
             return (
               <div className="col mb-4">
+              <Fade bottom >
                 <div className="card card-detail" key={key}>
                   <img
                     src={item.img1}
@@ -35,6 +32,7 @@ const Nike = () => {
                     </button>
                   </div>
                 </div>
+                </Fade>
               </div>
             );
           })}

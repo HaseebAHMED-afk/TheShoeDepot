@@ -10,6 +10,7 @@
     "history": "^5.0.0-beta.9",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-reveal": "^1.2.2",
     "react-router": "^6.0.0-beta.0",
     "react-router-dom": "^6.0.0-beta.0",
     "react-scripts": "3.4.1"
