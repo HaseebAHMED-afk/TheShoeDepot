@@ -7,3 +7,7 @@ Using routing we were able to create to multi-page websites.
 To top it off scroll animation is added by React-Reveal.
 
 More to come.
+
+You can view this project at the following Surge link:
+
+http://theshoedepotbyhaseebahmed.surge.sh/
